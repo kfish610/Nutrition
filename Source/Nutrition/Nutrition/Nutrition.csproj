@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{134CC5A4-3ED2-4DA7-A9C8-BA5CD51ECFF3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nutrition</RootNamespace>
+    <AssemblyName>Nutrition</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.1.2.0.1\lib\net35\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompFoodGroup.cs" />
+    <Compile Include="Needs\NeedsUtility.cs" />
+    <Compile Include="Needs\Need_FoodGroup.cs" />
+    <Compile Include="Patches\ThingWithComps_AddToNeeds.cs" />
+    <Compile Include="Patches\CompIngredients_DisplayFoodGroups.cs" />
+    <Compile Include="CompProperties_FoodGroup.cs" />
+    <Compile Include="FoodGroupCategory.cs" />
+    <Compile Include="FoodGroup.cs" />
+    <Compile Include="Needs\Need_Dairy.cs" />
+    <Compile Include="Needs\Need_Grain.cs" />
+    <Compile Include="Needs\Need_Protein.cs" />
+    <Compile Include="Needs\Need_Fruit.cs" />
+    <Compile Include="Needs\Need_Vegetables.cs" />
+    <Compile Include="NutrHediffDefOf.cs" />
+    <Compile Include="Patches\FoodUtility_SelectLowFoodGroups.cs" />
+    <Compile Include="SpecialThingFilters\SpecialThingFilterWorker_Protein.cs" />
+    <Compile Include="SpecialThingFilters\SpecialThingFilterWorker_Dairy.cs" />
+    <Compile Include="SpecialThingFilters\SpecialThingFilterWorker_Grain.cs" />
+    <Compile Include="SpecialThingFilters\SpecialThingFilterWorker_Fruit.cs" />
+    <Compile Include="SpecialThingFilters\SpecialThingFilterWorker_Vegetables.cs" />
+    <Compile Include="Nutrition.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Patches\ThingWithComps_AddMissingIngredients.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_FoodGroupsSatisfied.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_NeedProtein.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_NeedDairy.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_NeedFruit.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_NeedGrain.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_NeedVegetables.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

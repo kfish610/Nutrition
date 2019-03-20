@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <NeedDef>
+    <defName>Vegetables</defName>
+    <needClass>Nutrition.Needs.Need_Vegetables</needClass>
+    <label>vegetables</label>
+    <description>Satisfaction in the vegetable food group. If this drops too low, the person's mood will decrease, but if all of the food groups are kept high, their mood will increase.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <listPriority>19</listPriority>
+    <scaleBar>true</scaleBar>
+  </NeedDef>
+  <NeedDef>
+    <defName>Fruit</defName>
+    <needClass>Nutrition.Needs.Need_Fruit</needClass>
+    <label>fruit</label>
+    <description>Satisfaction in the fruit food group. If this drops too low, the person's mood will decrease, but if all of the food groups are kept high, their mood will increase.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <listPriority>18</listPriority>
+    <scaleBar>true</scaleBar>
+  </NeedDef>
+  <NeedDef>
+    <defName>Grain</defName>
+    <needClass>Nutrition.Needs.Need_Grain</needClass>
+    <label>grain</label>
+    <description>Satisfaction in the grain food group. If this drops too low, the person's mood will decrease, but if all of the food groups are kept high, their mood will increase.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <listPriority>17</listPriority>
+    <scaleBar>true</scaleBar>
+  </NeedDef>
+  <NeedDef>
+    <defName>Protein</defName>
+    <needClass>Nutrition.Needs.Need_Protein</needClass>
+    <label>protein</label>
+    <description>Satisfaction in the protein food group. If this drops too low, the person's mood will decrease, but if all of the food groups are kept high, their mood will increase.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <listPriority>16</listPriority>
+    <scaleBar>true</scaleBar>
+  </NeedDef>
+  <NeedDef>
+    <defName>Dairy</defName>
+    <needClass>Nutrition.Needs.Need_Dairy</needClass>
+    <label>dairy</label>
+    <description>Satisfaction in the dairy food group. If this drops too low, the person's mood will decrease, but if all of the food groups are kept high, their mood will increase.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <listPriority>15</listPriority>
+    <scaleBar>true</scaleBar>
+  </NeedDef>
+</Defs>

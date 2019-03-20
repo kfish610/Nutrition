@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SpecialThingFilterDef>
+        <defName>AllowVegetables</defName>
+        <label>vegetables</label>
+        <description>Allow vegetable</description>
+        <parentCategory>Foods</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowVegetable</saveKey>
+        <workerClass>Nutrition.SpecialThingFilters.SpecialThingFilterWorker_Vegetables</workerClass>
+    </SpecialThingFilterDef>
+    <SpecialThingFilterDef>
+        <defName>AllowFruit</defName>
+        <label>fruit</label>
+        <description>Allow fruit</description>
+        <parentCategory>Foods</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowFruit</saveKey>
+        <workerClass>Nutrition.SpecialThingFilters.SpecialThingFilterWorker_Fruit</workerClass>
+    </SpecialThingFilterDef>
+    <SpecialThingFilterDef>
+        <defName>AllowGrain</defName>
+        <label>grain</label>
+        <description>Allow grain</description>
+        <parentCategory>Foods</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowGrain</saveKey>
+        <workerClass>Nutrition.SpecialThingFilters.SpecialThingFilterWorker_Grain</workerClass>
+    </SpecialThingFilterDef>
+    <SpecialThingFilterDef>
+        <defName>AllowProtein</defName>
+        <label>protein</label>
+        <description>Allow protein</description>
+        <parentCategory>Foods</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowProtein</saveKey>
+        <workerClass>Nutrition.SpecialThingFilters.SpecialThingFilterWorker_Protein</workerClass>
+    </SpecialThingFilterDef>
+    <SpecialThingFilterDef>
+        <defName>AllowDairy</defName>
+        <label>dairy</label>
+        <description>Allow dairy</description>
+        <parentCategory>Foods</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowDairy</saveKey>
+        <workerClass>Nutrition.SpecialThingFilters.SpecialThingFilterWorker_Dairy</workerClass>
+    </SpecialThingFilterDef>
+</Defs>

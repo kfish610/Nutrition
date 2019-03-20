@@ -1,0 +1,5 @@
+C:\Users\kfish\Documents\RimWorldModded\Mods\Nutrition\Source\Nutrition\Nutrition\obj\Debug\Nutrition.csprojAssemblyReference.cache
+C:\Users\kfish\Documents\RimWorldModded\Mods\Nutrition\Source\Nutrition\Nutrition\obj\Debug\Nutrition.csproj.CoreCompileInputs.cache
+C:\Users\kfish\Documents\RimWorldModded\Mods\Nutrition\Assemblies\Nutrition.dll
+C:\Users\kfish\Documents\RimWorldModded\Mods\Nutrition\Source\Nutrition\Nutrition\obj\Debug\Nutrition.csproj.CopyComplete
+C:\Users\kfish\Documents\RimWorldModded\Mods\Nutrition\Source\Nutrition\Nutrition\obj\Debug\Nutrition.dll

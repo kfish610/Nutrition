@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>NeedVegetables</defName>
+        <workerClass>Nutrition.Thoughts.ThoughtWorker_NeedVegetables</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>vegetables low</label>
+                <description>I haven't eaten vegetables in a while.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>vegetables missing</label>
+                <description>I haven't eaten vegetables in a long time. My eyes and ears are deteriorating...</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+        <defName>NeedFruit</defName>
+        <workerClass>Nutrition.Thoughts.ThoughtWorker_NeedFruit</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>fruit low</label>
+                <description>I haven't eaten fruit in a while.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>fruit missing</label>
+                <description>I haven't eaten fruit in a long time. My eyes and ears are deteriorating...</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+        <defName>NeedGrain</defName>
+        <workerClass>Nutrition.Thoughts.ThoughtWorker_NeedGrain</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>grain low</label>
+                <description>I haven't eaten grain in a while.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>grain missing</label>
+                <description>I haven't eaten grain in a long time. My heart feels weak...</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+        <defName>NeedProtein</defName>
+        <workerClass>Nutrition.Thoughts.ThoughtWorker_NeedProtein</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>protein low</label>
+                <description>I haven't eaten protein in a while.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>protein missing</label>
+                <description>I haven't eaten protein in a long time. My muscles don't work like they used to...</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+        <defName>NeedDairy</defName>
+        <workerClass>Nutrition.Thoughts.ThoughtWorker_NeedDairy</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>dairy low</label>
+                <description>I haven't eaten dairy in a while.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>dairy missing</label>
+                <description>I haven't eaten dairy in a long time. I'd better be careful, my bones are weak...</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+        <defName>FoodGroupsSatisfied</defName>
+        <workerClass>Nutrition.Thoughts.ThoughtWorker_FoodGroupsSatisfied</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>food groups satisfied</label>
+                <description>I've been eating a pretty varied diet.</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+            <li>
+                <label>food groups fully satisfied</label>
+                <description>I've been eating a balanced diet. I feel great!</description>
+                <baseMoodEffect>9</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>
