@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RimCuisine</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="Flour"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="Flour"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Flour"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Grain</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Flour"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Grain</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="CannedVegetables"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="CannedVegetables"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="CannedVegetables"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Vegetable</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="CannedVegetables"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Vegetable</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="CannedFruit"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="CannedFruit"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="CannedFruit"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="CannedFruit"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="DriedFruit"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="DriedFruit"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="DriedFruit"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="DriedFruit"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="FruitPreserves"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="FruitPreserves"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="FruitPreserves"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="FruitPreserves"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="PickledVegetables"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="PickledVegetables"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="PickledVegetables"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Vegetable</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="PickledVegetables"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Vegetable</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="Cheese"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="Cheese"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Cheese"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Dairy</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Cheese"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Dairy</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawPlantain"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawPlantain"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawPlantain"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawPlantain"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawApples"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawApples"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawApples"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawApples"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawWheat"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawWheat"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawWheat"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Grain</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawWheat"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Grain</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawOnion"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawOnion"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawOnion"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Vegetable</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawOnion"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Vegetable</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawTomato"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawTomato"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawTomato"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Vegetable</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawTomato"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Vegetable</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawOrange"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawOrange"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawOrange"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawOrange"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawSoybean"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawSoybean"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawSoybean"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Vegetable</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawSoybean"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Vegetable</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawOats"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawOats"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawOats"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Grain</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawOats"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Grain</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawFigs"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawFigs"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawFigs"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawFigs"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawQuinoa"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawQuinoa"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawQuinoa"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Grain</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawQuinoa"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Grain</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawChickpeas"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawChickpeas"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawChickpeas"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Vegetable</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawChickpeas"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Vegetable</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawPomegranates"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawPomegranates"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawPomegranates"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawPomegranates"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawBarley"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawBarley"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawBarley"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Grain</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawBarley"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Grain</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawCactusFruit"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawCactusFruit"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawCactusFruit"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawCactusFruit"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawTruffles"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawTruffles"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawTruffles"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Vegetable</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawTruffles"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Vegetable</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawCoconut"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawCoconut"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawCoconut"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawCoconut"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawJuniperBerries"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawJuniperBerries"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawJuniperBerries"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawJuniperBerries"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef[defName="RawGrapes"]</xpath>
+                        </li>
+                        <li Class="PatchOperationConditional">
+                            <xpath>/Defs/ThingDef[defName="RawGrapes"]/comps</xpath>
+                            <match Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawGrapes"]/comps</xpath>
+                                <value>
+                                    <li Class="Nutrition.CompProperties_FoodGroup">
+                                        <foodGroup>Fruit</foodGroup>
+                                    </li>
+                                </value>
+                            </match>
+                            <nomatch Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="RawGrapes"]</xpath>
+                                <value>
+                                    <comps>
+                                        <li Class="Nutrition.CompProperties_FoodGroup">
+                                            <foodGroup>Fruit</foodGroup>
+                                        </li>
+                                    </comps>
+                                </value>
+                            </nomatch>
+                        </li>
+                    </operations>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

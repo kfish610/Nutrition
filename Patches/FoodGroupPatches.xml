@@ -16,7 +16,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="RawPotatoes"]</xpath>
                     <value>
                         <comps>
@@ -45,7 +45,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="RawFungus"]</xpath>
                     <value>
                         <comps>
@@ -74,7 +74,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="RawRice"]</xpath>
                     <value>
                         <comps>
@@ -103,7 +103,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="RawAgave"]</xpath>
                     <value>
                         <comps>
@@ -132,7 +132,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="RawCorn"]</xpath>
                     <value>
                         <comps>
@@ -161,7 +161,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
                     <value>
                         <comps>
@@ -190,7 +190,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="Beer"]</xpath>
                     <value>
                         <comps>
@@ -219,7 +219,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="Ambrosia"]</xpath>
                     <value>
                         <comps>
@@ -248,7 +248,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="Chocolate"]</xpath>
                     <value>
                         <comps>
@@ -277,7 +277,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="Milk"]</xpath>
                     <value>
                         <comps>
@@ -306,7 +306,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="InsectJelly"]</xpath>
                     <value>
                         <comps>
@@ -335,7 +335,7 @@
                         </li>
                     </value>
                 </match>
-                 <nomatch Class="PatchOperationAdd">
+                <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[@Name="EggBase"]</xpath>
                     <value>
                         <comps>

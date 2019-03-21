@@ -19,6 +19,11 @@ Nutrition adds five new needs to your colonist, one for each food group:
 
 You can also sort your food by these categories
 
-Support for Vegetable Garden and RimCuisine pending
+## Mod Support
+- Vegetable Garden Project
+- RimCuisine  
+
+These mods aren't needed, however, they do add more options to satisfy your food groups.  
+This mod should be placed after any food mods, but otherwise can be anywhere in the list.
 
 **Made with [Harmony](https://github.com/pardeike/Harmony)**
