@@ -475,35 +475,6 @@
                     <success>Always</success>
                     <operations>
                         <li Class="PatchOperationTest">
-                            <xpath>/Defs/ThingDef[defName="RawRedLentil"]</xpath>
-                        </li>
-                        <li Class="PatchOperationConditional">
-                            <xpath>/Defs/ThingDef[defName="RawRedLentil"]/comps</xpath>
-                            <match Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="RawRedLentil"]/comps</xpath>
-                                <value>
-                                    <li Class="Nutrition.CompProperties_FoodGroup">
-                                        <foodGroup>Meat</foodGroup>
-                                    </li>
-                                </value>
-                            </match>
-                            <nomatch Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="RawRedLentil"]</xpath>
-                                <value>
-                                    <comps>
-                                        <li Class="Nutrition.CompProperties_FoodGroup">
-                                            <foodGroup>Meat</foodGroup>
-                                        </li>
-                                    </comps>
-                                </value>
-                            </nomatch>
-                        </li>
-                    </operations>
-                </li>
-                <li Class="PatchOperationSequence">
-                    <success>Always</success>
-                    <operations>
-                        <li Class="PatchOperationTest">
                             <xpath>/Defs/ThingDef[defName="Rawsnowbeet"]</xpath>
                         </li>
                         <li Class="PatchOperationConditional">

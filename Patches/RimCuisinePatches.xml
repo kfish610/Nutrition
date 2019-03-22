@@ -2,7 +2,7 @@
 <Patch>
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>RimCuisine</li>
+            <li>RimCuisine 1.0</li>
         </mods>
         <match Class="PatchOperationSequence">
             <success>Always</success>
