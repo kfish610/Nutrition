@@ -10,11 +10,11 @@ namespace Nutrition
     [DefOf]
     class NutrHediffDefOf
     {
-        public static HediffDef MissingVegetables;
-        public static HediffDef MissingFruit;
-        public static HediffDef MissingGrain;
-        public static HediffDef MissingProtein;
-        public static HediffDef MissingDairy;
+        public static HediffDef MissingVegetables = null;
+        public static HediffDef MissingFruit = null;
+        public static HediffDef MissingGrain = null;
+        public static HediffDef MissingProtein = null;
+        public static HediffDef MissingDairy = null;
         static NutrHediffDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(NutrHediffDefOf));

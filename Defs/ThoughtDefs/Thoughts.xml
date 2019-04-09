@@ -8,12 +8,12 @@
             <li>
                 <label>vegetables low</label>
                 <description>I haven't eaten vegetables in a while.</description>
-                <baseMoodEffect>-3</baseMoodEffect>
+                <baseMoodEffect>-1</baseMoodEffect>
             </li>
             <li>
                 <label>vegetables missing</label>
                 <description>I haven't eaten vegetables in a long time. My eyes and ears are deteriorating...</description>
-                <baseMoodEffect>-6</baseMoodEffect>
+                <baseMoodEffect>-2</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>
@@ -25,12 +25,12 @@
             <li>
                 <label>fruit low</label>
                 <description>I haven't eaten fruit in a while.</description>
-                <baseMoodEffect>-3</baseMoodEffect>
+                <baseMoodEffect>-1</baseMoodEffect>
             </li>
             <li>
                 <label>fruit missing</label>
                 <description>I haven't eaten fruit in a long time. My eyes and ears are deteriorating...</description>
-                <baseMoodEffect>-6</baseMoodEffect>
+                <baseMoodEffect>-2</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>
@@ -42,12 +42,12 @@
             <li>
                 <label>grain low</label>
                 <description>I haven't eaten grain in a while.</description>
-                <baseMoodEffect>-3</baseMoodEffect>
+                <baseMoodEffect>-1</baseMoodEffect>
             </li>
             <li>
                 <label>grain missing</label>
                 <description>I haven't eaten grain in a long time. My heart feels weak...</description>
-                <baseMoodEffect>-6</baseMoodEffect>
+                <baseMoodEffect>-2</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>
@@ -59,12 +59,12 @@
             <li>
                 <label>protein low</label>
                 <description>I haven't eaten protein in a while.</description>
-                <baseMoodEffect>-3</baseMoodEffect>
+                <baseMoodEffect>-1</baseMoodEffect>
             </li>
             <li>
                 <label>protein missing</label>
                 <description>I haven't eaten protein in a long time. My muscles don't work like they used to...</description>
-                <baseMoodEffect>-6</baseMoodEffect>
+                <baseMoodEffect>-2</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>
@@ -76,12 +76,12 @@
             <li>
                 <label>dairy low</label>
                 <description>I haven't eaten dairy in a while.</description>
-                <baseMoodEffect>-3</baseMoodEffect>
+                <baseMoodEffect>-1</baseMoodEffect>
             </li>
             <li>
                 <label>dairy missing</label>
                 <description>I haven't eaten dairy in a long time. I'd better be careful, my bones are weak...</description>
-                <baseMoodEffect>-6</baseMoodEffect>
+                <baseMoodEffect>-2</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>

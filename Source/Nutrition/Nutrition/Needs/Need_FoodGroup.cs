@@ -13,8 +13,8 @@ namespace Nutrition.Needs
         public override int GUIChangeArrow => -1;
         public override float MaxLevel => 1f;
 
-        public const float BaseFoodGroupFallPerTick = 5.33333333E-6f;
-        public const float BaseMissingSeverityPerInterval = 2.2666666E-4f;
+        public const float BaseFoodGroupFallPerTick = 1E-6f;
+        public const float BaseMissingSeverityPerInterval = 5E-4f;
         public const float PercentageThreshFoodGroupLow = 0.15f;
         public const float PercentageThreshFoodGroupSatisfied = 0.75f;
         public FoodGroupCategory CurCategory

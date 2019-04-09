@@ -14,7 +14,9 @@ namespace Nutrition.Patches
     {
         static void Postfix(ThingWithComps __instance, Pawn ingester)
         {
-            if (ingester.needs.GetFoodGroups() == null)
+            if (ingester?.needs == null)
+                return;
+            if (ingester.needs.GetFoodGroups() == null || !ingester.needs.GetFoodGroups().Any())
                 return;
             var ingredients = __instance.GetComp<CompIngredients>();
             if (ingredients != null)

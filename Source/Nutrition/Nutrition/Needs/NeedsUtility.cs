@@ -52,7 +52,7 @@ namespace Nutrition.Needs
         {
             if (foodGroupNeed is Need_Vegetables)
             {
-                return SpecialThingFilterDef.Named("AllowVegetable");
+                return SpecialThingFilterDef.Named("AllowVegetables");
             }
             if (foodGroupNeed is Need_Fruit)
             {

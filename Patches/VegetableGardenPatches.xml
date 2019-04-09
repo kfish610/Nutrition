@@ -591,35 +591,6 @@
                     <success>Always</success>
                     <operations>
                         <li Class="PatchOperationTest">
-                            <xpath>/Defs/ThingDef[defName="Rawmushroom"]</xpath>
-                        </li>
-                        <li Class="PatchOperationConditional">
-                            <xpath>/Defs/ThingDef[defName="Rawmushroom"]/comps</xpath>
-                            <match Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="Rawmushroom"]/comps</xpath>
-                                <value>
-                                    <li Class="Nutrition.CompProperties_FoodGroup">
-                                        <foodGroup>Vegetable</foodGroup>
-                                    </li>
-                                </value>
-                            </match>
-                            <nomatch Class="PatchOperationAdd">
-                                <xpath>/Defs/ThingDef[defName="Rawmushroom"]</xpath>
-                                <value>
-                                    <comps>
-                                        <li Class="Nutrition.CompProperties_FoodGroup">
-                                            <foodGroup>Vegetable</foodGroup>
-                                        </li>
-                                    </comps>
-                                </value>
-                            </nomatch>
-                        </li>
-                    </operations>
-                </li>
-                <li Class="PatchOperationSequence">
-                    <success>Always</success>
-                    <operations>
-                        <li Class="PatchOperationTest">
                             <xpath>/Defs/ThingDef[defName="RawCactusFruit"]</xpath>
                         </li>
                         <li Class="PatchOperationConditional">
